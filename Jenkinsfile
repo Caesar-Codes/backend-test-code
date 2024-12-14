@@ -14,14 +14,14 @@ pipeline {
             }
         }
 
-        stage('Build Frontend') {
-            steps {
-                dir('client') {
-                    sh 'npm install'
-                    sh 'npm run build'
-                }
-            }
-        }
+        // stage('Build Frontend') {
+        //     steps {
+        //         dir('client') {
+        //             sh 'npm install'
+        //             sh 'npm run build'
+        //         }
+        //     }
+        // }
 
         stage('Build Backend') {
             steps {
