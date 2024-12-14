@@ -31,6 +31,10 @@ sample_data = [
 async def read_root():
     return {"message": "Welcome to the FastAPI backend"}
 
+@app.get("/status")
+async def read_root():
+    return {"message": "Mock test"}
+
 @app.get("/api/data", response_model=List[Item])
 async def get_data():
     return sample_data
