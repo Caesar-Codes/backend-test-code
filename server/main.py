@@ -33,7 +33,7 @@ async def read_root():
 
 @app.get("/status")
 async def read_root():
-    return {"message": "Mock test"}
+    return {"message": "Mock test 2"}
 
 @app.get("/api/data", response_model=List[Item])
 async def get_data():
